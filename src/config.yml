@@ -1,0 +1,90 @@
+# Drills by XSilverFalconX
+# http://dev.bukkit.org/bukkit-plugins/drills
+# 
+# PLEASE NOTE: All values regarding materials must be CAPITALIZED
+# ALSO: Two word Item names must be parsed with an UNDERSCORE
+# 
+# Our minables: This list will contain all the items that we DO want to give the
+# player
+#
+Minables:
+- STONE
+- REDSTONE_ORE
+- IRON_ORE
+- DIAMOND_ORE
+- COAL_ORE
+- GRAVEL
+- COBBLESTONE
+- LAPIS_ORE
+- GOLD_ORE
+- SANDSTONE
+- GRASS
+- AIR
+- DIRT
+- OBSIDIAN
+- SAND
+- MOSSY_COBBLESTONE
+- EMERALD_ORE
+- STONE_BRICKS
+- MOSSY_STONE_BRICKS
+- PLANK
+- RAIL
+#
+# Our UnMinables: This list will contain all the items that we DONT want to give
+# the player
+# NOTICE: These blocks are still broken by the drill, don't worry about bedrock 
+# it's used to stop the drill and is not touched by the drill
+#
+UnMinables:
+- COBBLE_WALL
+- LAVA
+- STATIONARY_LAVA
+- WATER
+- STATIONARY_WATER
+- FENCE
+- SNOW
+- ICE_BLOCK
+- PACKED_ICE
+#
+# How long should the drill warm up for? (In Seconds) - (Whole numbers only)
+# Use 0 to disable
+WarmUpTime: 30
+#
+# Do we want the player to use furnaces to mine?
+Furnaces: false
+#
+# This list cannot be empty! If it is, it will function as if the furnace
+# is disabled
+Furnace-fuel-types:
+- COAL
+- CHARCOAL
+#
+# Every how many minutes should I acquire another piece of fuel?
+Fuel-Checker: 1
+#  
+# What material would you like the drill to replace cobble walls with at the 
+# end of the run?
+ReplacementMat: DIRT
+#
+# Edit speed of the drill (Time in seconds per block mined)
+Speed: 2
+#
+# With Quiet mode you will no longer hear the [Drill] Messages (true or false)
+Quiet-Mode: false
+#
+# Exp gained on block(s) mined (true or false)
+Exp: false
+#
+# If true, allow these blocks to gain exp (Must be name of the block in CAPS)
+# Here's some examples
+Exp-On-Blocks:
+- GOLD_ORE
+- EMERALD_ORE
+- DIAMOND_ORE
+#
+# Exp amount, the amount to give to the player for mining the selected blocks
+# Note, this is not in levels, this is in points. Amount must be greater than 0.
+Exp-Amount: 0
+#
+# Log the ores a player received (on console)
+Logger: false
